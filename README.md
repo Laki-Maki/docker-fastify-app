@@ -10,3 +10,27 @@
 
 
 docker run -it -p 3000:3000 temywka/docker-fastify-example
+
+
+
+## Как работает проект
+
+- `Dockerfile` настраивает Node.js, устанавливает зависимости и запускает сервер Fastify.  
+- Переменная окружения `SERVER_MESSAGE` определяет сообщение, которое возвращает приложение.  
+- Маршруты и плагины загружаются автоматически с помощью **Fastify Autoload**.  
+
+### Структура проекта
+docker-fastify-example
+
+├── app.js
+
+├── package.json
+
+├── package-lock.json
+
+├── plugins/
+
+├── routes/
+
+└── test/
+
